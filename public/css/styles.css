@@ -73,6 +73,7 @@ nav {
     border-radius: 20px;
     border: none;
     height: 30px;
+    padding-left: 30px;
 }
 
 .prolist, .guide, .players {
@@ -155,7 +156,7 @@ footer h5 {
     text-transform: uppercase;
 }
 
-footer a, span, p {
+footer a, footer span, footer p {
     color: whitesmoke !important;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
