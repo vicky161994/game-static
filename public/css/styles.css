@@ -1,8 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+ul {
+    list-style: none;
+    padding: 0px !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #0B0B09 !important;
+}
+
+
+nav {
+    background-color: #0B0B09;
+    height: 60px;
+    color: whitesmoke !important;
+}
+.navbar-brand img {
+    height: 60px;
+    width: 300px;
+}
+
+.fa-bars {
+    color: whitesmoke;
+}
+
+.navbar li {
+    margin-left: 11px;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color:  #FECE2E !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link a .nav-down {
+     font-size: 10px;
+}
+
+.header-search {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 0.5%;
+}
+
+.header-search form {
+    position: relative;
+}
+
+.header-search form i{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.header-search form input {
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+}
+
+.prolist, .guide, .players {
+    width: 200px; 
+    background-color: white; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    position: absolute;
+}
+
+.list li {
+    padding: 0px;
+}
+
+.prolist ul li, .players ul li{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+}
+
+.players ul li, .players ul li{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.guide ul li, .guide ul li{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+}
+
+.prolist ul li:hover, .players ul li:hover, .guide ul li:hover{
+   background-color: rgb(245, 245, 245);
+   cursor: pointer;
+}
+
+.prolist ul li a:hover, .players ul li a:hover, .guide ul li a:hover{
+    color: #FECE2E !important;
+ }
+
+.nav-prolist:hover .prolist {
+    display: block;
+}
+
+.nav-players:hover .players {
+    display: block;
+}
+
+.nav-guide:hover .guide {
+    display: block;
+}
+
+@media only screen and (max-width: 1280px) {
+    nav {
+        height: auto;
+    }
+    nav #navbarSupportedContent {
+        background-color: #0B0B09;
+        height: 100vh;
+    }
+    .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+    }
+    .navbar-brand img {
+        height: 45px;
+        width: 150px;
+    }
+    .mob_disp {
+        display: none;
+    }
+  }
 
 
 /* 
