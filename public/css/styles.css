@@ -43,6 +43,9 @@ nav {
 .nav-link:hover {
     color:  #FECE2E !important;
     font-family: 'Poppins', sans-serif;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
 }
 
 .nav-link a .nav-down {
@@ -110,10 +113,16 @@ nav {
 .prolist ul li:hover, .players ul li:hover, .guide ul li:hover{
    background-color: rgb(245, 245, 245);
    cursor: pointer;
+   -webkit-transition: color 300ms linear;
+   -ms-transition: color 300ms linear;
+   transition: color 300ms linear;
 }
 
 .prolist ul li a:hover, .players ul li a:hover, .guide ul li a:hover{
     color: #FECE2E !important;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
  }
 
 .nav-prolist:hover .prolist {
@@ -128,7 +137,49 @@ nav {
     display: block;
 }
 
-@media only screen and (max-width: 1280px) {
+
+/* FOOTER  */
+
+footer {
+    background-color: #0B0B09;
+    height: auto;
+    padding: 50px;
+}
+
+footer h5 {
+    color: whitesmoke !important;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+footer a, span, p {
+    color: whitesmoke !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height:2;
+}
+
+footer a:hover {
+    color: #FECE2E !important;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+footer #twitter:hover {
+    color: #1DA1F2 !important;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+
+
+@media only screen and (max-width: 991px) {
     nav {
         height: auto;
     }
