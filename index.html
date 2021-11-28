@@ -13,7 +13,7 @@
 <body>
   <div id="header"></div>
   <div class="container">
-    <div class="scroll-content" style="position: fixed; top: 100px; z-index: 99999;">
+    <div class="scroll-content" style="position: fixed; top: 200px; z-index: 99999;">
       <ul>
         <li>
           <a href="#section1"> 
@@ -67,30 +67,53 @@
               <img src="https://prosettings.net/flags/ukraine.svg">
               <span>s1mple</span>
               <br>
-              <span id="aka">aka:simple, s1</span>
+              <span id="aka" style="margin-left: 55px;">aka:simple, s1</span>
               <br>
               <img src="https://prosettings.net/icons/navi.svg">
               <span>Natus Vincere</span>
             </p>
             <p class="man">Oleksandr "s1mple" Kostyliev was born on October 2nd, 1997 and is currently playing for Natus
               Vincere as an AWPer.</p>
-            <a href="https://twitter.com/s1mpleo"> <i class="fa fa-twitter" style="text-align: center;      
-                color:white; margin: 0 4px; font-size: 1.75em;" data-x-icon-b="&#xf099;" aria-hidden="true"></i> </a>
-            <a href="https://www.twitch.tv/s1mple"> <i class="fa fa-twitch" style="text-align: center;       
-                color:white; margin: 0 4px; font-size: 1.75em;" data-x-icon-b="&#xf1e8;" aria-hidden="true"></i> </a>
-            <a href="https://facebook.com/Officials1mple">
-              <i class="fa fa-facebook" style="text-align: center;  color:white; margin: 0 4px; font-size: 1.75em;"
-                data-x-icon-b="&#xf09a;" aria-hidden="true"></i>
+            <a href="https://twitter.com/s1mpleo">
+              <img src="./public/images/twitter.png" alt="twitter">
             </a>
-            <a href="https://steamcommunity.com/profiles/76561198034202275"> <i class="fa fa-steam" style="text-align: center;     
-                     color:white; margin: 0 4px; font-size: 1.75em;" data-x-icon-b="&#xf1b6;" aria-hidden="true"></i>
+            <a href="https://www.twitch.tv/s1mple">
+              <img src="./public/images/twitch.png" alt="twitter">
+            </a>
+            <a href="https://facebook.com/Officials1mple">
+              <img src="./public/images/facebook.png" alt="twitter">
+            </a>
+            <a href="https://steamcommunity.com/profiles/76561198034202275">
+              <img src="./public/images/steam.png" alt="twitter">
             </a>
           </div>
+        </div>
+        <div class="card card-body mt-3">
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2" class="text-uppercase text-center" style="font-family: 'Poppins', sans-serif;">Player info</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Player</th>
+                <td>Mongraal</td>
+              </tr>
+              <tr>
+                <th scope="row">Real Name</th>
+                <td>Kyle Jackson</td>
+              </tr>
+              <tr>
+                <th scope="row">Team</th>
+                <td><a href="#">Faze Clan</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="section1-content">
-         
           <span class="section-title">MONITOR SETTINGS -
             <a href="https://amzn.to/2VDw5B1" target="_blank" style="color: #fece2e !important">BenQ XL2546K</a></span>
           <hr>
@@ -285,6 +308,7 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-lg-9 offset-lg-3 col-md-12 col-sm-12 col-xs-12">
         <div class="section1-content">
@@ -407,7 +431,6 @@
       </div>
       
     </div>
-
 
     <div class="row">
       <div class="col-lg-3 header"></div>
@@ -579,9 +602,6 @@
       </div>
     </div>
 
-
-    
-   
    <div class="row" id="section3">
     <div class="col-lg-9 offset-lg-3 col-md-12 col-sm-12 col-xs-12">
       <br /><br />
@@ -591,6 +611,7 @@
       <br><br>
     </div>
    </div>
+
     <div class="col-lg-9 offset-lg-3  col-md-12 col-sm-12 col-xs-12">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 image">
@@ -717,6 +738,7 @@
         <br><br>
       </div>
     </div>
+
     <div class="col-lg-9 offset-lg-3  col-md-12 col-sm-12 col-xs-12">
       <div class="row">
 
@@ -832,6 +854,7 @@
 
 
     </div>
+
     <div class="row" id="section5">
       <div class="col-lg-3 col-md-3"></div>
       <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -981,27 +1004,24 @@
   </div>
   <div id="footer"></div>
   <script src="./public/js/jquery-3.6.0.min.js"></script>
+  <script src="./public/js/common.js"></script>
   <script>
     $("#header").load("./layout/header.html");
     $("#footer").load("./layout/footer.html");
-
-    $(document).scroll(function() {
-      var screenWidth = $(window).width();
-      if(screenWidth > 991){
-        var y = $(this).scrollTop();
-        console.log('scroll is: ' + y);
-        if (y > 700 && y < 3700) {
-          $('.scroll-content').fadeIn();
-        } else {
-          $('.scroll-content').fadeOut();
-        }
-      }
-      
-    });
-
   </script>
 </body>
 <style>  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+tr th , tr td {
+  color: whitesmoke !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+td a {
+  color: whitesmoke !important;
+}
 img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -1243,6 +1263,10 @@ img:hover {
     color: whitesmoke
   }
 
+  .image-desc span {
+    font-size: 18px;
+  }
+
   .image-desc p {
     color: whitesmoke !important;
     font-family: 'poppins', sans-serif;
@@ -1251,8 +1275,11 @@ img:hover {
   }
 
   .image-desc img {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-left: 20px;
   }
 
   .social-icon {
@@ -1326,6 +1353,10 @@ img:hover {
 }
 .x-code{
   color:white;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 span {
+  font-family: 'Poppins', sans-serif !important; 
 }
 
     
