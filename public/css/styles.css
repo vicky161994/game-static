@@ -202,8 +202,54 @@ footer #twitter:hover {
     .mob_disp {
         display: none;
     }
+    .mob_section {
+        margin-top: 10px !important;
+    }
+    .card-img-top {
+        width: 190px !important;
+        margin-left: 26%;
+    }
+    .card {
+        text-align: center !important;
+    }
   }
 
+  /* Players page styles  */
+p, a, h1, h2, h3, h4, h5, h6, span {
+    font-family: 'Poppins', sans-serif;
+}
+.intro-head {
+    color: #0B0B09;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #FECE2E !important;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+}
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    top: -10px;
+}
+.card-header {
+    color: whitesmoke;
+}
+.card-footer {
+    background-color: transparent !important;
+    font-size: 13px;
+}
+.second-row {
+    margin: 15px 0px;
+}
 
 /* 
  #FECE2E
