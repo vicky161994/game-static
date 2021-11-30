@@ -1,3 +1,6 @@
+$("#header").load("./layout/header.html");
+$("#content").load("../../screen.html");
+$("#footer").load("./layout/footer.html");
 $(document).scroll(function () {
   var screenWidth = $(window).width();
   if (screenWidth > 991) {
@@ -11,14 +14,15 @@ $(document).scroll(function () {
   }
 });
 
-const targetDiv = document.getElementById("share_icon_list");
-const btn = document.getElementById("share_button");
-btn.onclick = function () {
-  if (targetDiv.style.display === "") {
-    targetDiv.style.display = "block";
-  } else if (targetDiv.style.display !== "none") {
-    targetDiv.style.display = "none";
-  } else {
-    targetDiv.style.display = "block";
-  }
-};
+function toggleSocialIconList() {
+  var elms = document.getElementsByClassName("share-icon-box");
+  Array.from(elms).forEach((x) => {
+    if (x.style.display === "") {
+      x.style.display = "block";
+    } else if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  });
+}
