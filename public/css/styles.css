@@ -144,6 +144,30 @@ nav {
     display: block;
 }
 
+.share-body img, .share-body span {
+    cursor: pointer;
+}
+
+#share_icon_list {
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.share-icon {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.user-detail .input-icon {
+    position: relative;
+}
+
+.user-detail .input-icon span {
+    position: absolute; top: 22px; left: 3px;
+    color: lightgray;
+}
+
 
 /* FOOTER  */
 
@@ -230,13 +254,13 @@ a:hover {
 .card {
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
 }
-.card:hover {
+/* .card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     -webkit-transition: all ease-in-out .5s;
     -o-transition: all ease-in-out .5s;
     transition: all ease-in-out .5s;
     top: -10px;
-}
+} */
 .card-header {
     color: whitesmoke;
 }

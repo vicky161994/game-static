@@ -10,3 +10,15 @@ $(document).scroll(function () {
     }
   }
 });
+
+const targetDiv = document.getElementById("share_icon_list");
+const btn = document.getElementById("share_button");
+btn.onclick = function () {
+  if (targetDiv.style.display === "") {
+    targetDiv.style.display = "block";
+  } else if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
