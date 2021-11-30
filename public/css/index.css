@@ -19,11 +19,6 @@ img:hover {
   transition: all 0.8s;
 }
 
-.video1,
-.video2 {
-  width: 37% !important;
-}
-
 .scroll-content {
   display: none;
 }
@@ -315,10 +310,6 @@ body {
   width: -webkit-fill-available !important;
 }
 
-.image {
-  width: 19.7% !important;
-}
-
 .x-img-thumbnail {
   padding: 4px !important;
   /* line-height: 1.8; */
@@ -364,6 +355,15 @@ li.bypostauthor > article.comment {
     margin-left: -61px !important;
     margin-top: -6px !important;
   }
+}
+@media (min-width: 992px){
+  .image {
+    width: 19.7%;
+  }
+  .video1,
+  .video2 {
+  width: 37% !important;
+}
 }
 @media (max-width: 991px) {
   #simpletext {
